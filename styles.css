@@ -1,0 +1,367 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #a4a3a3;
+    color: #333;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+ box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+header nav a{
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+header nav a:hover {
+    color: #4CAF50;
+font-weight: 800;
+}
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #ffffff;
+}
+
+.hero .content {
+    max-width: 50%;
+}
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+.hero p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #555;
+}
+.hero a{
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+}
+.hero a:hover {
+    background-color: #45a049;
+}
+.hero img {
+    max-width: 80%;
+    height: auto;
+    margin: 10 auto;
+
+}
+
+@media (min-width: 768px) {
+    .hero {
+        flex-wrap: nowrap;
+   }
+    .hero .content {
+        max-width: 50%;
+        text-align: left;
+    }
+    .hero img {
+        max-width: 40%;
+  }
+}
+.logo-h3-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-h3-container img {
+    height: 50px; /* Ρύθμισε το ύψος του λογότυπου */
+    margin-right: 10px; /* Απόσταση μεταξύ του λογότυπου και του h3 */
+}
+
+h3 {
+    font-weight: 900;
+    margin: 0; /* Αφαιρεί το default margin γύρω από το h3 */
+}
+.Fast-Delivery {
+    display: block;
+    margin: 20% auto;
+    background-color: rgba(199, 208, 200, 0.7);
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.8rem;
+    font-style: italic;
+    color: #2c3e50;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.Fast-Delivery p {
+    font-style: italic;
+    color: #34495e;
+    font-size: 1.2rem;
+}
+
+.live-chat {
+    display: block;
+    margin: 20% auto;
+    background-color: rgba(199, 208, 200, 0.7);
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.8rem;
+    font-style: italic;
+    color: #2c3e50;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.live-chat p {
+    text-align: center;
+    color: #34495e;
+    font-size: 1.2rem;
+}
+.chat-container {
+    width: 400px;
+    margin: 20px auto;
+    padding: 10px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+.chat-header {
+    font-size: 18px;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.chat-area {
+    border: 1px solid #ddd;
+    padding: 10px;
+    height: 200px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    background: #f9f9f9;
+}
+.message {
+    margin-bottom: 8px;
+}
+.message.user {
+    text-align: right;
+}
+.chat-input {
+    display: flex;
+    gap: 10px;
+}
+.chat-input input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.chat-input button {
+    padding: 8px 12px;
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.chat-input button:hover {
+    background: #0056b3;
+}
+.chat-selector {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+.chat-selector button {
+    padding: 8px 12px;
+    background: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.chat-selector button:hover {
+    background: #1e7e34;
+}
+button{
+padding: 8px 12px;
+background: #28a745;
+color: #fff;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+button:hover {
+    background: #1e7e34;
+}
+
+form {
+    display: block;
+    border: 1px solid black;
+    height: auto;
+    width: 400px;
+    margin: 10% auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    text-align: left;
+    font-weight: 800;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+form input[type="email"] {
+    display: block;
+    width: calc(100% - 40px);
+    margin: 0 auto 20px auto;
+    padding: 10px;
+    background-color: #f4f4f4;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form input[type="submit"] {
+    display: block;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    font-size: large;
+    font-weight: 800;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+::placeholder {
+    color: #999;
+    font-weight: 800;
+}
+.about-p{
+    color: black;
+    font-size: larger;
+display: flex;
+}
+.about-p {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333; /* Σκούρο γκρι για καλή αναγνωσιμότητα */
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #f9f9f9; /* Ελαφρύ φόντο για διαχωρισμό */
+    border-left: 4px solid #0078d7; /* Έγχρωμη γραμμή για στυλ */
+    border-radius: 8px;
+}
+
+.about-p strong {
+    color: #0078d7; /* Μπλε χρώμα για τις επικεφαλίδες */
+    font-size: 18px;
+}
+
+.about-p br {
+    margin-bottom: 10px; /* Κενό μεταξύ των παραγράφων */
+}
+
+.about-p ul {
+    padding-left: 20px; /* Κενό στα bullets */
+}
+
+.about-p li {
+    margin-bottom: 10px; /* Χώρος ανάμεσα στα items */
+    list-style: disc inside; /* Bullet εμφάνιση */
+}
+
+.about-p a {
+    color: #0078d7;
+    text-decoration: none;
+}
+
+.about-p a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+    header nav {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .hero .content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .Fast-Delivery, .live-chat {
+        margin: 10% auto;
+        padding: 15px;
+        font-size: 1.4rem;
+    }
+
+    .chat-container {
+        width: 90%;
+    }
+
+    form {
+        width: 90%;
+        margin: 5% auto;
+    }
+
+    .about-p {
+        font-size: 14px;
+        padding: 10px;
+        margin: 10px;
+    }
+}
